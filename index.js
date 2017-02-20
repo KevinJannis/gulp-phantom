@@ -18,7 +18,7 @@
     if (options == null) {
       options = {};
     }
-    cmnd = 'phantomjs';
+    cmnd = options.cmd;
     args = [];
     if (options.cookiesFile) {
       args.push('--cookies-file=' + options.cookiesFile);
