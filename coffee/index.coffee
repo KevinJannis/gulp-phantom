@@ -9,7 +9,7 @@ PLUGIN_NAME = 'gulp-phantom'
 module.exports = (options = {}) ->
 
 	# build a command with arguments
-	cmnd = 'phantomjs'
+	cmnd = options.cmd
 	args = []
 	# Sets the file name to store the persistent cookies
 	args.push '--cookies-file=' + options.cookiesFile if options.cookiesFile
